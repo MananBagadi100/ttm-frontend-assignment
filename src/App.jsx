@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import Capabilities from './components/Capabilities'
 import Benefits from './components/Benefits'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 import './App.css'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Capabilities />
       <Benefits />
       <Contact />
+      <Footer />
     </div>
   )
 }
