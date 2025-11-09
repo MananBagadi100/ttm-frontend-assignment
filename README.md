@@ -98,7 +98,7 @@ npm run dev
 
 The project has been deployed on Vercel for easy review.
 
-**Live Link:** _Add your Vercel link here once deployed_
+**Live Link:** https://ttm-frontend-assignment.vercel.app/
 
 ---
 
@@ -128,7 +128,7 @@ Each feature branch was:
 | GitHub Repo with Feature Branches | ✔ Multiple branches with PR merges |
 | README Documentation (15 pts) | ✔ Detailed |
 | Research Summary (10 pts) | ✔ Included |
-| Hosted Deployment (10 pts) | ⬜ To be added (after Vercel deploy) |
+| Hosted Deployment (10 pts) | ⬜ https://ttm-frontend-assignment.vercel.app/ |
 
 ---
 
