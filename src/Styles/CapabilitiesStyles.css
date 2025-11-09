@@ -40,7 +40,7 @@
 }
 
 /* Desktop */
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .capabilities-grid {
     grid-template-columns: repeat(4, 1fr);
   }

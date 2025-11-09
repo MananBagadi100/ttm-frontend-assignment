@@ -64,7 +64,7 @@
 }
 
 /* Desktop breakpoint point*/
-@media (min-width: 650px) {
+@media (min-width: 768px) {
   .why-grid {
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
