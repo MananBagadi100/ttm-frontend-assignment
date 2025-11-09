@@ -1,0 +1,47 @@
+.capabilities-section {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+
+.capabilities-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.capabilities-subtext {
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  color: #555;
+  font-size: 1rem;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.capability-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
+
+.capability-icon {
+  margin-bottom: 1rem;
+  color: #6b42ff;
+}
+
+/* Desktop */
+@media (min-width: 650px) {
+  .capabilities-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
