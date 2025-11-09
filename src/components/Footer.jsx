@@ -52,7 +52,7 @@ export default function Footer() {
                 <div>
                     <h4 className="footer-section-heading">Company</h4>
                     <a className='footer-section-link'>About</a>
-                    <a className='footer-section-link'>Why Choose TTM Konnect</a>
+                    <a className='footer-section-link'>Why TTM Konnect</a>
                     <a className='footer-section-link'>Blog</a>
                 </div>
 
