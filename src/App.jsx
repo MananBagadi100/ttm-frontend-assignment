@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Capabilities from './components/Capabilities'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className='page-contents-full-container'>
       <Navbar />
       <Hero />
+      <Capabilities />
     </div>
   )
 }
