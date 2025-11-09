@@ -1,0 +1,74 @@
+.why-ttm {
+  padding: 3.5rem 1.5rem;
+  background: #fafafa;
+  text-align: center;
+}
+
+.why-ttm h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.why-subtext {
+  margin-top: 8px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.why-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.why-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  transition: 0.25s;
+}
+
+.why-icon {
+  margin-bottom: 12px;
+  color: #6b42ff; /* matches the purple theme */
+}
+
+.why-grid {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 2rem; /*more spacing to prevent cramping*/
+}
+
+.why-card:hover {
+  transform: translateY(-4px);
+  border-color: #cfcfcf;
+}
+
+.why-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.why-card p {
+  margin-top: 6px;
+  line-height: 1.55;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Desktop breakpoint point*/
+@media (min-width: 650px) {
+  .why-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
