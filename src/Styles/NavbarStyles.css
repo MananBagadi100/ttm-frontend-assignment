@@ -1,0 +1,142 @@
+:root {
+    --purple: #4F46E5;
+    --text-dark: #111827;
+    --text-light: #4B5563;
+    --bg-white: #FFFFFF;
+}
+
+/* =====================
+   MOBILE FIRST STYLES
+   ===================== */
+
+.navbar {
+    background: var(--bg-white);
+    width: 100%;
+    border-bottom: 1px solid #E5E7EB;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* Hamburger icon */
+.nav-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* Hide desktop nav on mobile */
+.desktop-nav {
+    display: none;
+}
+
+/* Remove underline from all links */
+a,
+a:active,
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+/* CTA Button */
+.nav-cta {
+    padding: 8px 14px;
+    border-radius: 6px;
+    background: var(--purple);
+    color: #fff;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+/* Drawer Styles */
+.drawer {
+    width: 260px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.drawer a,
+.drawer-service-item {
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.drawer-submenu {
+    padding-left: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* CTA in drawer */
+.drawer-cta {
+    margin-top: 8px;
+}
+
+/* =====================
+   DESKTOP ONLY (≥ 650px)
+   ===================== */
+@media (min-width: 650px) {
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        gap: 26px;
+    }
+
+    .nav-dropdown {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        gap: 8px;
+        background: white;
+        border: 1px solid #E5E7EB;
+        padding: 10px;
+        border-radius: 6px;
+        position: absolute;
+        top: 100%;
+        /* 👈 attaches directly below the Services link */
+        left: 0;
+        width: 200px;
+        z-index: 20;
+    }
+    .nav-dropdown:hover .dropdown-menu {
+        display: flex;
+    }
+}

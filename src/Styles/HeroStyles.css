@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 90vh; /* covers almost full screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+/* Background Image */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(17, 17, 17, 0.55) 0%,     /* darker top */
+    rgba(17, 17, 17, 0.65) 35%,    /* strengthen mid */
+    rgba(17, 17, 17, 0.85) 100%    /* strong bottom */
+  );
+  z-index: -1;
+}
+/* Text & layout */
+.hero-content {
+  text-align: center;
+  max-width: 680px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  margin-top: 12px;
+  color: #e5e7eb;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.primary-btn {
+  background: #4F46E5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+/* Desktop Increase Scale */
+@media (min-width: 650px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1.15rem;
+  }
+}
