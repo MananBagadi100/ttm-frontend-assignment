@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Capabilities from './components/Capabilities'
+import Benefits from './components/Benefits'
 import './App.css'
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <Capabilities />
+      <Benefits />
     </div>
   )
 }
