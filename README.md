@@ -86,7 +86,7 @@ src/
 ## 🧪 Local Development
 
 ```bash
-git clone https://github.com/MananBagadi100/ttm-frontend-assignment
+git clone https://github.com/MananBagadi100/ttm-frontend-assignment.git
 cd ttm-frontend-assignment
 npm install
 npm run dev
